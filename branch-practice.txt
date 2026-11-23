@@ -1,1 +1,1 @@
-Practicing Git branches
+Practicing conflict resolution from main
