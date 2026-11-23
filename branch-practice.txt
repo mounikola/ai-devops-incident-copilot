@@ -1,3 +1,4 @@
 Practicing conflict resolution from the feature branch
 Practicing conflict resolution from main
 Main branch update for rebase practice
+Practicing rebase
