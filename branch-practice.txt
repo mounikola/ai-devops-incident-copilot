@@ -1,1 +1,1 @@
-Practicing Git branches
+Practicing conflict resolution from the feature branch
