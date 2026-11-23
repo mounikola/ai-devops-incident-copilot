@@ -1,1 +1,2 @@
+Practicing conflict resolution from the feature branch
 Practicing conflict resolution from main
