@@ -3,3 +3,32 @@ A DevOps capstone with CI/CD, infrastructure as code, monitoring, security scann
 
 ## About
 AI DevOps Incident Copilot helps investigate and summarize DevOps incidents.
+
+## First feature: incident analysis
+
+The API includes a deterministic first-pass analyzer for common log patterns such as out-of-memory kills, container crash loops, upstream connection failures, and request timeouts. It returns a summary, severity, likely cause, confidence, matching evidence, and read-only investigation steps. It does not execute commands or change infrastructure.
+
+### Run locally
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
+uvicorn app.main:app --reload
+```
+
+Open `http://127.0.0.1:8000/docs` to try the API interactively.
+
+### Analyze an incident
+
+Send a `POST` request to `/api/incidents/analyze` with JSON like:
+
+```json
+{
+  "title": "Checkout API returns 502",
+  "description": "Requests started failing after the latest deployment.",
+  "logs": "upstream connection refused"
+}
+```
+
+The response includes the likely cause, severity, confidence, matching log evidence, and suggested read-only checks. If no known pattern matches, the analyzer says the evidence is insufficient instead of guessing.
