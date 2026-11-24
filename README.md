@@ -32,3 +32,11 @@ Send a `POST` request to `/api/incidents/analyze` with JSON like:
 ```
 
 The response includes the likely cause, severity, confidence, matching log evidence, and suggested read-only checks. If no known pattern matches, the analyzer says the evidence is insufficient instead of guessing.
+
+
+## Run with Docker Compose
+
+Make sure Docker Desktop is open, then run:
+
+```powershell
+docker compose up --build
