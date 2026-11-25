@@ -49,3 +49,7 @@ Run `docker compose up --build` and open `http://127.0.0.1:8001/docs`. With a Ge
 ## Demo
 
 ![Gemini incident analysis result](screenshots/incident-analysis.png)
+
+## Live Demo
+
+[Open the API documentation](https://ai-devops-incident-copilot-br6g.onrender.com/docs)
