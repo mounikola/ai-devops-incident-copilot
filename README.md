@@ -45,3 +45,7 @@ docker compose up --build
 Copy `.env.example` to `.env` with `Copy-Item .env.example .env`, then open it with `notepad .env` and replace the key placeholder. Keep `.env` private; it is ignored by Git.
 
 Run `docker compose up --build` and open `http://127.0.0.1:8001/docs`. With a Gemini key, incident text is sent to Google for analysis; use synthetic demo logs. Without a key, the app uses its rule-based fallback.
+
+## Demo
+
+![Gemini incident analysis result](screenshots/incident-analysis.png)
